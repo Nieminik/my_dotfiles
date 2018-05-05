@@ -9,10 +9,31 @@ cat /home/dominik/.cache/wal/sequences
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
 #
-ZSH_THEME="agnoster"
-ZSH_THEME="punctual"
-ZSH_THEME="honukai"
-ZSH_THEME="geometry/geometry"
+
+source /home/dominik/.oh-my-zsh/antigen.zsh
+
+# Load the oh-my-zsh's library.
+antigen use oh-my-zsh
+
+# Bundles from the default repo (robbyrussell's oh-my-zsh).
+antigen bundle git
+antigen bundle heroku
+antigen bundle pip
+antigen bundle lein
+antigen bundle command-not-found
+
+# Syntax highlighting bundle.
+antigen bundle zsh-users/zsh-syntax-highlighting
+
+# Load the theme.
+
+#antigen theme eendroroy/nothing nothing
+#export NT_HIDE_COUNT=1 
+
+antigen theme geometry-zsh/geometry
+
+# Tell Antigen that you're done.
+antigen apply
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
