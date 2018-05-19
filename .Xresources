@@ -1,4 +1,4 @@
-URxvt.font:              xft:Hack-Regular:size=9
+URxvt.font:              xft:Hack-Regular:pixelsize=15
 URxvt.letterSpace:      0
 URxvt.perl-ext-common:  default,matcher
 URxvt.urlLauncher:      firefox 
