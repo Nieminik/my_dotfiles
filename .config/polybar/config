@@ -67,7 +67,7 @@ font-2 = Sauce Pro:size=7;0
 
 modules-left = i3 spotify
 modules-right = date
-modules-center = volume filesystem wlan eth battery powermenu backlight-acpi
+modules-center = battery filesystem wlan volume backlight-acpi
 
 dim-value = 1.0
 ;tray-position = right 
