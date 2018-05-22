@@ -21,7 +21,6 @@ Plugin 'scrooloose/nerdtree'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'dracula/vim'
 Plugin 'leafgarland/typescript-vim'
-Plugin 'Valloric/YouCompleteMe'
 Plugin 'rhysd/vim-clang-format'
 Plugin 'dylanaraps/wal.vim'
 
@@ -153,7 +152,6 @@ let g:airline_mode_map = {
 let g:syntastic_python_checkers=['']
 
 
-let g:ycm_global_ycm_extra_conf = '/usr/share/vim/vimfiles/third_party/ycmd/cpp/ycm/.ycm_extra_conf.py'
 "hi Normal guibg=NONE ctermbg=NONE
 
 "youcompleteme preview window disable
