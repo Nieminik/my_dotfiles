@@ -220,9 +220,7 @@ assign [class="(?i)telegram"] $w3
 assign [class="(?i)spotify"] $w4 
 for_window [class="(?i)spotify"] move to workspace $w4
 
-set $wallpaper /home/dominik/Pictures/wallhaven-333455.jpg
-#exec_always feh --bg-scale $wallpaper
-exec_always wal -R
+exec_always wal -a 90 -R
 
 bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +5% #increase sound volume
 bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ -5% #decrease sound volume
