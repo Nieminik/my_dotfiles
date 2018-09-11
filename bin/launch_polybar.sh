@@ -1,7 +1,8 @@
-if type "xrandr"; then
-  for m in $(xrandr --query | grep " connected" | cut -d" " -f1); do
+killall polybar
+
+while pgrep -x polybar >/dev/null; do sleep 1; done
+
+for m in $(polybar --list-monitors | cut -d":" -f1); do
     MONITOR=$m polybar --reload mybar &
-  done
-else
-  polybar --reload example &
-fi
+done
+
