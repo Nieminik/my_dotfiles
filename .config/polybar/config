@@ -32,10 +32,11 @@ secondary = ${xrdb:color8}
 alert = ${xrdb:color6}
 
 [bar/mybar]
-override-restack = true
-wm-restack = i3
+#override-restack = true
+#wm-restack = i3
 
 ;monitor = ${env:MONITOR:HDMI-1}
+monitor = ${env:MONITOR:}
 width = 100%
 height = 35
 bottom = true
@@ -84,52 +85,6 @@ override-redirect = false
 
 scroll-up = i3wm-wsnext
 scroll-down = i3wm-wsprev
-
-
-
-[bar/mybottombar]
-override-restack = true
-wm-restack = i3
-
-;monitor = ${env:MONITOR:HDMI-1}
-width = 100%
-height = 22
-;offset-x = 1%
-;offset-y = 1%
-radius = 0.0
-;fixed-center = true
-
-background = ${colors.background}
-foreground = ${colors.foreground}
-
-line-size = 0
-line-color = #000000
-
-border-size = 0
-border-color = #000000
-
-border-bottom-size = 0
-
-padding-left = 0
-padding-right = 2
-
-module-margin-left = 1
-module-margin-right = 2
-
-font-0 = FontAwesome:size=9;0
-font-1 = Hack:size=8;0
-font-2 = siji:pixelsize=10;1
-
-modules-left =  
-modules-center = spotify
-modules-right = 
-
-;dim-value = 1.0
-tray-position = right
-tray-padding = 0
-
-;bottom = true
-
 
 [module/spotify]
 type = custom/script

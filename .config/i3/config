@@ -108,8 +108,6 @@ bindsym $mod+a focus parent
 #set $w4 " Spotify"
 #set $w5 " Thunar"
 
-
-
 set $w10 "10: " 
 set $w1 "1:  " 
 set $w2 "2:  " 
@@ -193,9 +191,8 @@ bindsym $mod+r mode "resize"
 #        }
 # #       position top
 #}
-exec_always killall polybar && polybar mybar 
-exec polybar mybar 
 
+exec_always --no-startup-id $HOME/bin/launch_polybar.sh
 
 for_window [class="^.*"] border pixel 0
 
