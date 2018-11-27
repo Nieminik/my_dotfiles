@@ -284,6 +284,7 @@ exec compton -b -f -i 0.9 --backend glx --paint-on-overlay --vsync opengl-swc
 #bindsym Print exec 
 bindsym Print exec escrotum -C  
 bindsym shift+Print exec escrotum -s -C  
-exec xinput set-button-map 13 1 2 3 5 4 6 7
 exec xset s off
+
+
 
