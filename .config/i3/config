@@ -193,14 +193,13 @@ bindsym $mod+r mode "resize"
 # #       position top
 #}
 
-exec_always --no-startup-id $HOME/bin/launch_polybar.sh
 
 for_window [class="^.*"] border pixel 0
 
 
 #gaps
-workspace 2 gaps inner 30
-workspace 2 gaps outer -10
+#workspace 2 gaps inner 30
+#workspace 2 gaps outer -10
 
 
 #my personal bindings and config
@@ -218,7 +217,7 @@ assign [class="(?i)telegram"] $w3
 assign [class="(?i)spotify"] $w4 
 for_window [class="(?i)spotify"] move to workspace $w4
 
-exec_always wal -a 90 -R
+exec_always wal -a 90 -R -n
 
 
 bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +5% #increase sound volume
@@ -285,6 +284,11 @@ exec compton -b -f -i 0.9 --backend glx --paint-on-overlay --vsync opengl-swc
 bindsym Print exec escrotum -C  
 bindsym shift+Print exec escrotum -s -C  
 exec xset s off
+exec_always feh --no-xinerama --no-fehbg --bg-fill "$(< "${HOME}/.cache/wal/wal")"
 
+exec autorandr -l pc
 
+workspace $w1 output DP-0
+workspace $w2 output HDMI-0
 
+exec_always --no-startup-id $HOME/bin/launch_polybar.sh

@@ -88,7 +88,7 @@ scroll-down = i3wm-wsprev
 
 [module/spotify]
 type = custom/script
-exec = python ~/bin/spotify.py
+exec = python ~/bin/spotify_info.py
 tail = true
 interval=1
 format-foreground = ${colors.primary}
