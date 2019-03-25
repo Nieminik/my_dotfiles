@@ -117,6 +117,7 @@ PATH=$PATH:/home/dominik/.gem/ruby/2.4.0/bin
 set -o vi
 
 if [ -z "$DISPLAY" ] && [ -n "$XDG_VTNR" ] && [ "$XDG_VTNR" -eq 1 ]; then
+  source /home/dominik/.cache/wal/color-tty.sh
   neofetch --w3m
   exec startx
 fi
