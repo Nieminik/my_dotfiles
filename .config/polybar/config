@@ -222,7 +222,7 @@ label-song-ellipsis = true
 [module/xbacklight]
 type = internal/xbacklight
 
-format = <label> <bar>
+format = <label>: <bar>
 label = 
 
 bar-width = 10
@@ -318,7 +318,7 @@ label = %date% %time%
 [module/volume]
 type = internal/volume
 
-format-volume = <label-volume> <bar-volume>
+format-volume = <label-volume>: <bar-volume>
 label-volume = 
 label-volume-foreground = ${root.foreground}
 
@@ -375,13 +375,13 @@ time-format = %H:%M
 ;   %percentage% (default)
 ;   %time%
 ;   %consumption% (shows current charge rate in watts)
-label-charging = Charging %percentage%%
+label-charging = Charging: %percentage%%
 
 ; Available tokens:
 ;   %percentage% (default)
 ;   %time%
 ;   %consumption% (shows current discharge rate in watts)
-label-discharging = Discharging %percentage%%
+label-discharging = Discharging: %percentage%%
 
 ; Available tokens:
 ;   %percentage% (default)

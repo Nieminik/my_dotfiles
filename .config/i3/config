@@ -39,9 +39,11 @@ floating_modifier $mod
 # start a terminal
 #bindsym $mod+Return exec i3-sensible-terminal
 #bindsym $mod+Return exec rxvt-unicode
-exec --no-startup-id urxvtd -q -f -o
-bindsym $mod+Return   exec --no-startup-id  urxvt 
-bindsym $mod+Shift+Return   exec --no-startup-id  urxvt -e "ranger"
+
+set $term st -f "Hack-Regular:size=11"
+
+bindsym $mod+Return   exec --no-startup-id  $term
+bindsym $mod+Shift+Return  exec --no-startup-id  $term -e "ranger"
 
 # kill focused window
 bindsym $mod+Shift+q kill
