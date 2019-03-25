@@ -1,0 +1,1 @@
+rdesktop -g 1920x1080 -P -z -x l -r sound:off -u windowsuser 192.168.0.69:3389 -K
