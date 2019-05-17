@@ -20,4 +20,13 @@
 .config/polybar/*
 !.config/polybar/config
 
+!.config/terminator
+.config/terminator/*
+!.config/terminator/config
+
+
+!.config/rofi
+.config/rofi/*
+!.config/rofi/config
+
 !bin
