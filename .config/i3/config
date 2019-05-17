@@ -39,9 +39,8 @@ floating_modifier $mod
 # start a terminal
 #bindsym $mod+Return exec i3-sensible-terminal
 #bindsym $mod+Return exec rxvt-unicode
-exec --no-startup-id urxvtd -q -f -o
-bindsym $mod+Return   exec --no-startup-id  urxvt 
-bindsym $mod+Shift+Return   exec --no-startup-id  urxvt -e "ranger"
+bindsym $mod+Return exec terminator
+bindsym $mod+Shift+Return exec terminator -e "ranger"
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -217,7 +216,7 @@ assign [class="(?i)telegram"] $w3
 assign [class="(?i)spotify"] $w4 
 for_window [class="(?i)spotify"] move to workspace $w4
 
-exec_always wal -a 90 -R -n
+exec_always wal -a 90 -R
 
 
 bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +5% #increase sound volume
@@ -276,15 +275,15 @@ hide_edge_borders both
 
 
 
-bindsym $mod+d exec rofi -show run 
-exec compton -b -f -i 0.9 --backend glx --paint-on-overlay --vsync opengl-swc  
+bindsym $mod+d exec rofi -show run
+exec_always compton -b -f -i 0.9 -o 0.2 --backend glx --vsync
 
 
 #bindsym Print exec 
 bindsym Print exec escrotum -C  
 bindsym shift+Print exec escrotum -s -C  
 exec xset s off
-exec_always feh --no-xinerama --no-fehbg --bg-fill "$(< "${HOME}/.cache/wal/wal")"
+#exec_always feh --no-xinerama --no-fehbg --bg-fill "$(< "${HOME}/.cache/wal/wal")"
 
 exec autorandr -l pc
 
