@@ -20,7 +20,7 @@ rofi.color-normal: #222222, #f8f8f8, #222222, #222222, #444444
 
 !!!! dkeg - panels !!!!
 
-!*foreground:#1f3b51
+*foreground:#1f3b51
 background:#d3d3d3
 
 *color0: #191927
