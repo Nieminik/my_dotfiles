@@ -1,4 +1,5 @@
 
+
 ;
 ;   To learn more about how to configure Polybar
 ;   go to https://github.com/jaagr/polybar
@@ -21,7 +22,8 @@
 ;primary = #5a3e3b
 ;secondary = #5a3e3b
 ;alert = #284b63
-background = ${xrdb:background}
+;background = ${xrdb:background}
+background = #7e000000
 background-alt = ${xrdb:background}
 ;foreground = ${xrdb:color4}
 ;foreground-alt = ${xrdb:color1}
@@ -170,6 +172,7 @@ label-focused = %name%
 label-focused-underline = ${colors.secondary}
 label-focused-padding = ${module/bspwm.label-focused-padding}
 label-focused-foreground = ${colors.foreground}
+label-focused-background = #44000000
 
 label-unfocused = %name%
 label-unfocused-padding = ${module/bspwm.label-occupied-padding}
