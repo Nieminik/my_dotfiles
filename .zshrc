@@ -2,14 +2,14 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-  export ZSH=/home/dominik/.oh-my-zsh
+  export ZSH=~/.oh-my-zsh
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
 #
 
-source /home/dominik/.oh-my-zsh/antigen.zsh
+source ~/.oh-my-zsh/antigen.zsh
 
 # Load the oh-my-zsh's library.
 antigen use oh-my-zsh
@@ -114,8 +114,7 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias cf='xclip -selection clipboard'
 #TERM=xterm-256color
-PATH=$PATH:/home/dominik/bin
-PATH=$PATH:/home/dominik/.gem/ruby/2.4.0/bin
+PATH=$PATH:~/bin
 
 set -o vi
 

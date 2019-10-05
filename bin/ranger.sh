@@ -1,2 +1,2 @@
-cat /home/dominik/.cache/wal/sequences
+cat ~/.cache/wal/sequences
 ranger

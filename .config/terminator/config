@@ -1,9 +1,9 @@
 [global_config]
+  borderless = True
 [keybindings]
 [layouts]
   [[default]]
     [[[child1]]]
-      command = ""
       parent = window0
       profile = default
       type = Terminal
@@ -13,17 +13,12 @@
 [plugins]
 [profiles]
   [[default]]
-    background_color = "#fbf1c7"
-    background_darkness = 0.9
+    background_darkness = 0.95
     background_type = transparent
     cursor_color = "#aaaaaa"
-    custom_command = cat /home/dominik/.cache/wal/sequences && zsh
+    custom_command = cat ~/.cache/wal/sequences && zsh
     font = Fira Mono for Powerline 10
-    foreground_color = "#3c3836"
-    palette = "#fbf1c7:#cc241d:#98971a:#d79921:#458588:#b16286:#689d6a:#7c6f64:#928374:#9d0006:#79740e:#b57614:#076678:#8f3f71:#427b58:#3c3836"
-    scrollback_infinite = True
     scrollbar_position = hidden
     show_titlebar = False
     use_custom_command = True
     use_system_font = False
-    use_theme_colors = True
