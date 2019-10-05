@@ -1,6 +1,9 @@
 # Alt key
 set $mod Mod1
 
+# Win key
+set $c_mod Mod4
+
 # Font
 font pango:Hack for Powerline 8
 
@@ -8,10 +11,10 @@ font pango:Hack for Powerline 8
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec terminator
+bindsym $c_mod+Return exec terminator
 
 # start file manager
-bindsym $mod+Shift+Return exec terminator -e "$HOME/bin/ranger.sh"
+bindsym $c_mod+Shift+Return exec terminator -e "$HOME/bin/ranger.sh"
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -205,3 +208,7 @@ workspace $w2 output HDMI-0
 
 # Launch polybar
 exec_always --no-startup-id $HOME/bin/launch_polybar.sh
+
+# Move workspaces between screens
+bindsym $mod+Shift+greater move workspace to output right
+bindsym $mod+Shift+less move workspace to output left
