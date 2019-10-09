@@ -25,4 +25,8 @@
 .config/rofi/*
 !.config/rofi/config
 
+!.config/compton
+.config.compton/*
+!.config/compton/compton.conf
+
 !bin
