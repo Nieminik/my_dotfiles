@@ -145,16 +145,18 @@ exec --no-startup-id synclient NaturalScrolling=1 VertScrollDelta=-113
 bindsym $mod+shift+x exec i3lock -c "$bg"
 
 # exec macros
-bindsym $mod + F1 exec vivaldi-stable 
-bindsym $mod + F2 exec pycharm 
-bindsym $mod + F3 exec telegram-desktop
-bindsym $mod + F4 exec spotify
+bindsym $c_mod + 1 exec vivaldi-stable 
+bindsym $c_mod + 2 exec pycharm 
+bindsym $c_mod + 3 exec telegram-desktop
+bindsym $c_mod + 4 exec spotify
+bindsym $c_mod + 7 exec steam
 
 # Move programs to proper workspaces
 assign [class="(?i)vivaldi-stable"] $w1 
-assign [class="(?i)steam"] $w7 
+assign [class="(?i)pycharm"] $w2
 assign [class="(?i)telegram"] $w3 
 assign [class="(?i)spotify"] $w4 
+assign [class="(?i)steam"] $w7 
 
 for_window [class="(?i)spotify"] move to workspace $w4
 
@@ -190,7 +192,7 @@ hide_edge_borders both
 bindsym $mod+d exec rofi -show run
 
 # Compton
-exec_always compton -b -f -i 0.9 -o 0.2 --backend glx --vsync
+exec_always compton -b -f -i 0.9 -o 0.2 --backend glx --vsync --config ~/.config/compton/compton.conf
 
 # Screen shot controls
 bindsym Print exec escrotum -C  
