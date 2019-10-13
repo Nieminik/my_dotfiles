@@ -1,8 +1,8 @@
 # Alt key
-set $mod Mod1
+set $c_mod Mod1
 
 # Win key
-set $c_mod Mod4
+set $mod Mod4
 
 # Font
 font pango:Hack for Powerline 8
@@ -11,10 +11,10 @@ font pango:Hack for Powerline 8
 floating_modifier $mod
 
 # start a terminal
-bindsym $c_mod+Return exec terminator
+bindsym $mod+Return exec terminator
 
 # start file manager
-bindsym $c_mod+Shift+Return exec terminator -e "$HOME/bin/ranger.sh"
+bindsym $mod+Shift+Return exec terminator -e "$HOME/bin/ranger.sh"
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -59,11 +59,11 @@ bindsym $mod+a focus parent
 
 set $w10 "10: " 
 set $w1 "1: " 
-set $w2 "2: " 
+set $w2 "2: "
 set $w3 "3: " 
 set $w4 "4: "
 set $w5 "5: "
-set $w6 "6: "
+set $w6 "6: "
 set $w7 "7: "
 set $w8 "8: "
 set $w9 "9: "
@@ -206,7 +206,7 @@ exec autorandr -l pc
 
 # Select initially displayed workspaces
 workspace $w1 output DP-0
-workspace $w2 output HDMI-0
+workspace $w2 output HDMI-4
 
 # Launch polybar
 exec_always --no-startup-id $HOME/bin/launch_polybar.sh
